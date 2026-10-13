@@ -1,5 +1,8 @@
 # Copperlan Connect — Apple Silicon public beta
 
+<img width="950" height="621" alt="CopperlanConnect_BetaRC16" src="https://github.com/user-attachments/assets/24a4377e-e34d-4a58-acd1-be63a3786976" />
+
+
 An independent MIDI routing application for CopperLAN networks on Apple Silicon
 Macs. This is not an official CopperLAN or Alyseum release.
 
