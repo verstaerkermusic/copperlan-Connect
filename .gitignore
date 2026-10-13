@@ -1,0 +1,10 @@
+# Private publishing notes are not public repository content.
+RELEASE-CHECKLIST.md
+.DS_Store
+._*
+*.zip
+*.pcap
+*.log
+diagnostics/
+*.pem
+*.key
