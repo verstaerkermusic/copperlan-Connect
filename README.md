@@ -11,9 +11,9 @@ configuration before testing. The app is ad-hoc signed, not notarized.
 
 ## Quick start
 
-1. Extract the download and move the entire `Copperlan-Connect-Beta` folder to a permanent location.
-2. Run **Install Hardware Helper.command**, type INSTALL and enter your administrator password.
-3. Run **Use Hardware Helper.command** while the MIDI service is stopped.
+1. Extract the ZIP and move the **whole folder** to a permanent location.
+2. Run **Setup.command**. If the helper is missing, type INSTALL and enter your admin password once.
+3. Setup selects helper mode and asks whether to start automatically when you log in.
 4. Open **Copperlan Connect.app**, select your Ethernet adapter in Settings and click **Start service**.
 
 Python is included. Do not install a separate Python or disable macOS security
