@@ -5,15 +5,21 @@
 An independent MIDI routing application for CopperLAN networks on Apple Silicon
 Macs. This is not an official CopperLAN or Alyseum release.
 
-Current public beta: **[0.3.0-rc.21 · Build 24](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.21)**.
+Current public beta: **[0.3.0-rc.22 · Build 25](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.22)**.
 The app is ad-hoc signed, not notarized. Keep a backup of valuable hardware configurations.
+
+## New in rc22
+
+- **Important reconnect fix:** AL-88/AL-88c power-off/on renews the device session and resumes retained CMidi connections without replaying old MIDI.
+- Normal device shutdown no longer causes a routing-read error dialog, and route reading completes after devices return.
+- Right-click a port and choose **Connections** for a compact list of channel, Clock and SysEx connections. A fixed channel column, adaptive width and stable updates keep longer lists readable.
 
 ## Download and installation
 
-- **[Download the DMG](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.21/Copperlan-Connect-0.3.0-rc.21-macos-arm64.dmg)**
-- [ZIP alternative](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.21/Copperlan-Connect-0.3.0-rc.21-macos-arm64.zip)
-- **[Anleitung auf Deutsch (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.21/Copperlan-Connect-rc21-Anleitung-DE.pdf)** · **[English guide (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.21/Copperlan-Connect-rc21-Guide-EN.pdf)**
-- [Full release history and changes since the previous GitHub release](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.21) · [SHA-256 checksums](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.21/SHA256SUMS.txt)
+- **[Download the DMG](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-0.3.0-rc.22-macos-arm64.dmg)**
+- [ZIP alternative](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-0.3.0-rc.22-macos-arm64.zip)
+- **[Anleitung auf Deutsch (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-rc22-Anleitung-DE.pdf)** · **[English guide (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-rc22-Guide-EN.pdf)**
+- [Full release history and changes since the previous GitHub release](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.22) · [SHA-256 checksums](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/SHA256SUMS.txt)
 
 1. Open the DMG and drag **Copperlan Connect.app** to **Applications** before opening it. For the ZIP, extract it and move the app to Applications.
 2. Open the app. The guided setup asks you to select the Ethernet adapter connected to CopperLAN. If background hardware access needs installation, macOS requests administrator authorization. An existing working helper is reused.
@@ -64,7 +70,7 @@ location when login startup is enabled. See the PDF guide for removal instructio
 - Original Intel services are not automatically removed or replaced. Hardware Store/Restore are explicit actions and do not run automatically.
 
 The release page records the complete documented history, newest version first,
-including private intermediate candidates and the changes since GitHub rc.17.
+including private intermediate candidates and the changes since GitHub rc.21.
 
 ## Feedback
 
