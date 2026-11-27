@@ -5,21 +5,22 @@
 An independent MIDI routing application for CopperLAN networks on Apple Silicon
 Macs. This is not an official CopperLAN or Alyseum release.
 
-Current public beta: **[0.3.0-rc.22 · Build 25](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.22)**.
+Current public beta: **[0.3.0-rc.23 · Build 26](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.23)**.
 The app is ad-hoc signed, not notarized. Keep a backup of valuable hardware configurations.
 
-## New in rc22
+## New in rc23
 
-- **Important reconnect fix:** AL-88/AL-88c power-off/on renews the device session and resumes retained CMidi connections without replaying old MIDI.
-- Normal device shutdown no longer causes a routing-read error dialog, and route reading completes after devices return.
-- Right-click a port and choose **Connections** for a compact list of channel, Clock and SysEx connections. A fixed channel column, adaptive width and stable updates keep longer lists readable.
+- **Faster Patch overview.** Eligible AL-88 units are read in pairs, with each device confirmed separately.
+- **CMidi persistence and recovery.** Save and restore this Mac's connections, including routes that wait for a USB-MIDI interface to return.
+- **Device header colors** and a more responsive MIDI monitor.
+- **AL-88/AL-88c Firmware Updater preview** under **Tools**, with automatic device refresh after a confirmed update. It requires existing direct Ethernet capture access. Firmware images are supplied separately.
 
 ## Download and installation
 
-- **[Download the DMG](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-0.3.0-rc.22-macos-arm64.dmg)**
-- [ZIP alternative](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-0.3.0-rc.22-macos-arm64.zip)
-- **[Anleitung auf Deutsch (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-rc22-Anleitung-DE.pdf)** · **[English guide (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/Copperlan-Connect-rc22-Guide-EN.pdf)**
-- [Full release history and changes since the previous GitHub release](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.22) · [SHA-256 checksums](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.22/SHA256SUMS.txt)
+- **[Download the DMG](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.23/Copperlan-Connect-0.3.0-rc.23-macos-arm64.dmg)**
+- [ZIP alternative](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.23/Copperlan-Connect-0.3.0-rc.23-macos-arm64.zip)
+- **[Anleitung auf Deutsch (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.23/Copperlan-Connect-rc23-Anleitung-DE.pdf)** · **[English guide (PDF)](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.23/Copperlan-Connect-rc23-Guide-EN.pdf)**
+- [Changes since the previous GitHub release](https://github.com/verstaerkermusic/copperlan-Connect/releases/tag/0.3.0-rc.23) · [SHA-256 checksums](https://github.com/verstaerkermusic/copperlan-Connect/releases/download/0.3.0-rc.23/SHA256SUMS.txt)
 
 1. Open the DMG and drag **Copperlan Connect.app** to **Applications** before opening it. For the ZIP, extract it and move the app to Applications.
 2. Open the app. The guided setup asks you to select the Ethernet adapter connected to CopperLAN. If background hardware access needs installation, macOS requests administrator authorization. An existing working helper is reused.
@@ -69,8 +70,7 @@ location when login startup is enabled. See the PDF guide for removal instructio
 - The historical controller identity fault is not conclusively explained. A pause/resume test without a fault was reported on rc.19; that is not a universal long-term guarantee.
 - Original Intel services are not automatically removed or replaced. Hardware Store/Restore are explicit actions and do not run automatically.
 
-The release page records the complete documented history, newest version first,
-including private intermediate candidates and the changes since GitHub rc.21.
+The release page lists the latest changes. The ZIP and DMG contain the complete release history.
 
 ## Feedback
 
